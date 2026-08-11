@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no, email=no, address=no">
 <title>Angebot – Gebäudereinigung</title>
 <style>
   @page { size: A4; margin: 0; }
@@ -184,6 +185,11 @@
   }
   @media print {
     .page { margin: 0; box-shadow: none; }
+  }
+  .footer a,
+  .footer-muted a {
+    color: inherit !important;
+    text-decoration: none !important;
   }
 </style>
 </head>
