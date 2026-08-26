@@ -26,14 +26,14 @@ export default function Hero() {
             persönlich betreut und zuverlässig ausgeführt.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
-            
+            <a
               href="#kontakt"
               className="inline-flex items-center gap-2 rounded-full bg-navy px-7 py-3.5 text-base font-semibold text-white transition-transform hover:bg-navy-dark active:scale-[0.98]"
             >
               Angebot anfragen
               <ArrowRight size={18} weight="bold" />
             </a>
-            
+            <a
               href="#leistungen"
               className="inline-flex items-center rounded-full border border-navy/25 px-7 py-3.5 text-base font-semibold text-navy-dark transition-colors hover:bg-sky-soft active:scale-[0.98]"
             >
@@ -85,6 +85,10 @@ function LiquidDroplet() {
           scale={1.15}
           speed={reduce ? 0 : 0.5}
         />
+      </div>
+    </div>
+  );
+}
       </div>
     </div>
   );
