@@ -89,7 +89,3 @@ function LiquidDroplet() {
     </div>
   );
 }
-      </div>
-    </div>
-  );
-}
