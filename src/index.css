@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/*
+  Markenfarben aus dem bestehenden Köhn-Briefpapier übernommen
+  (Navy + Hellblau). Ein Akzent, konsequent verwendet.
+*/
+@theme {
+  --color-navy: #173f70;
+  --color-navy-dark: #102b4e;
+  --color-sky: #c3d5ee;
+  --color-sky-soft: #eef4fb;
+  --color-ink: #22303f;
+  --color-muted: #5b6d84;
+
+  --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-sky);
+    color: var(--color-navy-dark);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-navy);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
